@@ -1,0 +1,93 @@
+.app-container{
+	height: 280px;
+    margin: auto;
+	position: relative;
+
+}
+.container{
+	position: fixed;
+	height: 280px;
+    width: 100%;
+    margin: 0;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+
+}
+ul {
+	margin: auto;
+	z-index: 1;
+
+
+}
+li{
+	display: inline-block;	
+	margin-left: 20px;
+	z-index: 1;
+
+}
+li:hover{
+	cursor: pointer;
+  	border-bottom: 4px solid  #009999 ;
+}
+.bg {
+  	background-image: url("https://i.ytimg.com/vi/WEbogusOCvM/maxresdefault.jpg");
+    display: block;
+    content: "";
+   	height: 100%;
+    width: 100%;
+    z-index: -10;
+    box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.25);
+	  /* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icon-container {
+	padding-left: 20%;
+	z-index: 2;
+	position: absolute;
+
+    
+}
+.icon{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #fff;
+    border: 5px solid #fff;
+    transition: width  1s ,height  1s;
+
+}
+
+
+.profileNav{
+	width: 100%;
+	background: white;
+	border:1px solid #eee;
+	box-shadow: 0 2px 3px #ccc;
+	box-sizing: border-box;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+  
+}
+
+@media(max-width:800px ){
+	.icon{
+		width: 50px;
+		height: 50px;
+		border: none;
+
+	}
+	
+	.icon-container {
+	padding-left: 10%;
+
+}
+}
