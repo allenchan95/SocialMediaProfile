@@ -1,14 +1,13 @@
 import React from 'react';
 import './Nav.css';
+import Spinner from '../../component/Spinner/Spinner';
 import {connect} from 'react-redux';
 import * as actions from '../../store/action/index';
 const Nav = (props) => {
-
-
-
 return (
 	     	<div>
 	          <div className='Nav'>
+	          {props.loading?<Spinner />:null}
 	          <ul>
 	          {props.isAuthenticated? 
 	          		<li onClick={()=>props.onLogout()}><div>SIGNOUT</div></li>
@@ -29,7 +28,8 @@ const mapStateToProps = state => {
 	return {
 		token : state.auth.token,
 		isAuthenticated : state.auth.token !== null,
-		userId :state.auth.userId
+		userId :state.auth.userId,
+		loading :state.auth.loading
 	}
 }
 

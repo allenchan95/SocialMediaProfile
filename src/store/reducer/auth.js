@@ -6,6 +6,7 @@ const initialState = {
 	error: null,
 	email:null,
 	name:null,
+	loading:false
 
 };
 const authStart = (state,action) =>{
@@ -14,7 +15,8 @@ const authStart = (state,action) =>{
 	userId : null,
 	error: null,
 	email:null,
-	name:null});
+	name:null,
+    loading:true});
 }
 
 const authSuccess = (state,action) => {
