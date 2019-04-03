@@ -1,72 +1,38 @@
-import React,{useState} from 'react';
-import Input from '../Input/Input';
-import './ProfileDataForm.css';
+import React,{useState}from 'react';
 import {checkValidity} from '../../utility';
-const ProfileDataForm = (props) => {
-  const [dataForm,setDataForm] = useState({
-                icon: {
+import Input from '../../compontents/Input/Input';
+
+const PostForm = (props) => {
+const [dataForm,setDataForm] = useState({
+                Title: {
                 	elementType: 'input',
                 	elementConfig: {
                 		type: 'text',
-                		placeholder:"Your Icon"
+                		placeholder:"POST TITLE"
                 	},
                 	value: props.icon,
                 	validation: {
-                		required: true,
-                		isImage: true
-                       
+                		required: true
                 	},
                 	valid: false,
                 	touched: false
                 },
-                    name: {
+                Content: {
                     elementType: 'input',
                     elementConfig: {
-                        type: 'text',
-                        placeholder:"Your Name"
+                        type: 'textarea',
+                        placeholder:"POST CONTENT"
                     },
                     value: props.name,
                     validation: {
                         required: true,
-                        minLength:4
-                       
+                        maxLength: 200
                     },
                     valid: false,
                     touched: false
-                },
-                    intro: {
-                    elementType: 'input',
-                    elementConfig: {
-                        type: 'text',
-                        placeholder:"Your Introduction"
-                    },
-                    value: props.intro,
-                    validation: {
-                        required: true,
-                        maxLength: 100
-                       
-                    },
-                    valid: false,
-                    touched: false
-                },
-                location: {
-                    elementType: 'input',
-                    elementConfig: {
-                        type: 'text',
-                        placeholder:"Your Location"
-                    },
-                    value: props.location,
-                    validation: {
-                        required: true
-                       
-                    },
-                    valid: false,
-                    touched: false
-                },
-
+                }
 		});
-  const [formIsValid, setformIsValid] = useState(false);
-
+const [formIsValid, setformIsValid] = useState(false);
 	const inputChangeHandler = (event, inputIdentifier) => {
 		const updatedOrderForm = {
 			...dataForm
@@ -92,7 +58,7 @@ const ProfileDataForm = (props) => {
 	}
 	const onSubmitForm = () => {
 		console.log('submit');
-		props.updateForm(dataForm['icon'].value,dataForm['name'].value,dataForm['intro'].value,dataForm['location'].value);
+		props.updateForm(dataForm['Title'].value,dataForm['Content'].value, new Date().toLocaleString());
         props.closed();
 	}
 
@@ -122,12 +88,11 @@ const ProfileDataForm = (props) => {
                       <button  onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
                 </div>
             ) ;
-        return (
+	return(
 			<div>
 				{form}
-		    </div>
+			</div>
+		)
+}
 
-      );
- }
-
-export default ProfileDataForm;
+export default PostForm;

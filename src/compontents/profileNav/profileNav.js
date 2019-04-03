@@ -10,7 +10,7 @@ return (
 	          <div className='profileNav'>
 	          <ul>
 	           <li onClick={props.onUpdateFormClick}><p>UPDATE PROFILE</p></li>
-	           <li onClick={props.onNewPost}><p>NEW POST</p></li>
+	           <li onClick={props.onPostFormClick}><p>NEW POST</p></li>
 	          </ul>
 	          </div>
 	        </nav>

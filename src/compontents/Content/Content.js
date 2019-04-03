@@ -18,6 +18,7 @@ import './Content.css';
                              key={formElement.id}
                              title={formElement.config.title}
                              content={formElement.config.content}
+                             date={formElement.config.date}
                             />
                          ))}
                   
