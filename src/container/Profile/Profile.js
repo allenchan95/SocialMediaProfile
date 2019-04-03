@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ProfileNav from '../../compontents/profileNav/profileNav';
-import Content from '../../compontents/Content/Content';
-import Modal from '../../compontents/Modal/Modal';
-import DataForm from '../../compontents/ProfileDataForm/ProfileDataForm';
-import PostForm from '../../compontents/PostForm/PostForm';
+import ProfileNav from '../../component/profileNav/profileNav';
+import Content from '../../component/Content/Content';
+import Modal from '../../component/Modal/Modal';
+import DataForm from '../../component/ProfileDataForm/ProfileDataForm';
+import PostForm from '../../component/PostForm/PostForm';
 class Profile extends Component {
 	state = {
 		userIconURL :  'https://pbs.twimg.com/profile_images/1105852053493088258/keQ6njSw_400x400.jpg',
@@ -17,9 +17,7 @@ class Profile extends Component {
 		showUpdateForm: false,
 		showIcon:false,
 		showPostForm:false,
-		posts:[
-
-		]
+		posts:[]
 		}
 	
 

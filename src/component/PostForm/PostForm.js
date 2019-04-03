@@ -1,6 +1,6 @@
 import React,{useState}from 'react';
 import {checkValidity} from '../../utility';
-import Input from '../../compontents/Input/Input';
+import Input from '../../component/Input/Input';
 
 const PostForm = (props) => {
 const [dataForm,setDataForm] = useState({
