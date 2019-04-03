@@ -1,7 +1,7 @@
 import React,{useState}from 'react';
 import {checkValidity} from '../../utility';
 import Input from '../../component/Input/Input';
-
+import classes from './PostForm.module.css';
 const PostForm = (props) => {
 const [dataForm,setDataForm] = useState({
                 Title: {
@@ -85,7 +85,7 @@ const [formIsValid, setformIsValid] = useState(false);
                              changed={(event) => inputChangeHandler(event,formElement.id)}
                             />
                          ))}
-                      <button  onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
+                      <button className={classes.Button} onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
                 </div>
             ) ;
 	return(

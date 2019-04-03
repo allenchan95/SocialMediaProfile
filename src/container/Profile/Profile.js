@@ -4,6 +4,7 @@ import Content from '../../component/Content/Content';
 import Modal from '../../component/Modal/Modal';
 import DataForm from '../../component/ProfileDataForm/ProfileDataForm';
 import PostForm from '../../component/PostForm/PostForm';
+
 class Profile extends Component {
 	state = {
 		userIconURL :  'https://pbs.twimg.com/profile_images/1105852053493088258/keQ6njSw_400x400.jpg',

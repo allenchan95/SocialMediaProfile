@@ -1,12 +1,12 @@
 import React from 'react';
-import './Nav.css';
+import classes from './Nav.css';
 import Spinner from '../../component/Spinner/Spinner';
 import {connect} from 'react-redux';
 import * as actions from '../../store/action/index';
 const Nav = (props) => {
 return (
-	     	<div>
-	          <div className='Nav'>
+	     	<div className={classes.appcontainer}>
+	          <div className={classes.nav}>
 	          {props.loading?<Spinner />:null}
 	          <ul>
 	          {props.isAuthenticated? 

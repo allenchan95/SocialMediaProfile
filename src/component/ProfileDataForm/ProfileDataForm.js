@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import Input from '../Input/Input';
-import './ProfileDataForm.css';
+import classes from './ProfileDataForm.module.css';
 import {checkValidity} from '../../utility';
 const ProfileDataForm = (props) => {
   const [dataForm,setDataForm] = useState({
@@ -119,7 +119,7 @@ const ProfileDataForm = (props) => {
                              changed={(event) => inputChangeHandler(event,formElement.id)}
                             />
                          ))}
-                      <button  onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
+                      <button  className={classes.Button} onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
                 </div>
             ) ;
         return (

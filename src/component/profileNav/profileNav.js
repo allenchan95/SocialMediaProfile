@@ -1,11 +1,14 @@
 import React from 'react';
 import './profileNav.css';
 import {connect} from 'react-redux';
+import Nav from '../Nav/Nav';
 const profileNav = (props) => {
 return (
 	<div className='app-container'>
-		<div className='container'>
-		  <div className='bg' > </div>
+	 <div className='container'>
+		<Nav className='Nav'/>
+		  <div className='bg' > 
+		  </div>
 	       <nav className='nav' >
 	          <div className='icon-container'><img className='icon' src={props.IconUrl} alt='icon' onClick={props.onIconClick}/></div>
 	          <div className='profileNav'>
