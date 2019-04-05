@@ -14,7 +14,7 @@ return (
 	          	: <li onClick={()=>props.onAuth('a@gmail.com','123123',false)}><div>SIGNIN</div></li>
 	          }
 	          	
-	           	<li><input type="search"  className='search' placeholder="Keywords"/><div></div></li>
+	           	<li><button className='button' onClick={props.onSearchClicked}>Search</button></li>
 	          </ul>
 	          </div>
 	        	  {props.children}
