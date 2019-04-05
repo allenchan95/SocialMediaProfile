@@ -30,7 +30,7 @@ const form= <div>
 return (
 	<div>
 	<div className={classes.searchForm}>
-		<input type='text' placeholder='keywords' onChange={(event)=>props.onSearchChange(event)}/>
+		<input type='text' value={props.searchField} placeholder='keywords' onChange={(event)=>props.onSearchChange(event)}/>
     </div>
     {form}
     </div>

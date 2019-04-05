@@ -73,6 +73,7 @@ class Profile extends Component {
 			...this.state,
 			userName:name,
 			intro:intro,
+			userIconURL:`https://robohash.org/${name}`,
 			location:location,
 			showSearch:false
 		})
