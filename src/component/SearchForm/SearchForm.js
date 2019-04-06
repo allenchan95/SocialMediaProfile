@@ -1,12 +1,12 @@
 import React,{useEffect} from 'react';
 import classes from './SearchForm.module.css';
 import { connect } from 'react-redux';
-import {requestRobots,setSearchField} from '../../store/action/users'
+import {requestUsers,setSearchField} from '../../store/action/users'
 const searchForm = (props) => {
 
 
 useEffect(()=>{
-  props.onRequestRobots();
+  props.onRequestUsers();
 
 },[])
 const filterRobots =  props.users.filter(robot =>{
@@ -15,16 +15,25 @@ const filterRobots =  props.users.filter(robot =>{
 console.log(filterRobots);
 
 const form= <div> 
+    <div className={classes.cardList}>
       {  
         filterRobots.map((user,i) => {
           return (
+        
             <div className={classes.card}
                key={i} 
-              onClick={()=>props.onCardClicked(filterRobots[i].username,filterRobots[i].name,filterRobots[i].name)}
-             >{filterRobots[i].username}</div>
+              onClick={()=>props.onCardClicked(filterRobots[i].username,filterRobots[i].name,filterRobots[i].email,filterRobots[i].id)}
+             >
+           
+             <img src = {`https://robohash.org/${filterRobots[i].username}`} alt='avatar' />
+             <br/>
+             {filterRobots[i].username}
+             </div>
+             
            );
         })
       }  
+      </div>
     </div>
 
 return (
@@ -49,7 +58,7 @@ const mapStateToPrpos = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-    onRequestRobots: () => dispatch(requestRobots())
+    onRequestUsers: () => dispatch(requestUsers())
     }
 }
 

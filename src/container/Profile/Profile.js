@@ -5,6 +5,9 @@ import Modal from '../../component/Modal/Modal';
 import DataForm from '../../component/ProfileDataForm/ProfileDataForm';
 import PostForm from '../../component/PostForm/PostForm';
 import SreachForm from '../../component/SearchForm/SearchForm';
+import { connect } from 'react-redux';
+
+import {requestPosts,updatePosts} from '../../store/action/users'
 
 
 class Profile extends Component {
@@ -26,7 +29,7 @@ class Profile extends Component {
 		}
 	
 
-
+	
 	onShowModal = () =>{
 		this.setState( {showModal:!this.state.showModal, Modalstyle : "Modal ModalOpen" });
 	}
@@ -62,13 +65,14 @@ class Profile extends Component {
 		})
 	}
 	onSubmitNewPost = (title,content,date) =>{
-		const posts =this.state.posts.slice();
-		posts.push({title:title,content:content,date:date});  
-		this.setState({...this.state,
-					posts:posts})
+		this.props.onUpdatePost({title:title,body:content,date:date});
+		// const posts =this.state.posts.slice();
+		// this.props.posts.push({title:title,content:content,date:date});  
+		// this.setState({...this.state,
+		// 			posts:posts})
 		
 	} 
-	onCardClicked = (name,intro,location) => {
+	onCardClicked = (name,intro,location,id) => {
 		this.setState({
 			...this.state,
 			userName:name,
@@ -77,6 +81,7 @@ class Profile extends Component {
 			location:location,
 			showSearch:false
 		})
+		this.props.onRequestUsers(id);
 	}
 
 
@@ -92,10 +97,26 @@ class Profile extends Component {
       	   		{this.state.showIcon ? <img src={this.state.userIconURL} alt='icon' />:null}
       	   		{this.state.showPostForm ? <PostForm updateForm={this.onSubmitNewPost}  closed={()=>this.onCloseModal()} />:null}
       	   </Modal>
-           {this.state.showSearch? <SreachForm onCardClicked={this.onCardClicked} /> : <Content name={this.state.userName} intro={this.state.intro}  location= {this.state.location} website={this.state.website} posts={this.state.posts} />}
+           {this.state.showSearch? <SreachForm onCardClicked={this.onCardClicked} /> : <Content name={this.state.userName} intro={this.state.intro}  location= {this.state.location} website={this.state.website} posts={this.props.posts} />}
       </div>
     );
   }
 }
 
-export default Profile;
+
+const mapStateToPrpos = (state) => {
+  return {
+    posts: state.user.posts,
+    isPending: state.user.isPending,
+    error: state.user.error
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onRequestUsers: (id) => dispatch(requestPosts(id)),
+    onUpdatePost : (post) => dispatch(updatePosts(post))
+    }
+}
+
+export default connect(mapStateToPrpos,mapDispatchToProps)(Profile);

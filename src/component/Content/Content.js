@@ -17,7 +17,7 @@ import './Content.css';
                         <Projects
                              key={formElement.id}
                              title={formElement.config.title}
-                             content={formElement.config.content}
+                             content={formElement.config.body}
                              date={formElement.config.date}
                             />
                          ))}

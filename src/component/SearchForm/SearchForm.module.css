@@ -1,16 +1,27 @@
 .searchForm{
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 100%;
 	background: white;
-	position: relative;
-}
+	position: fixed;
+	z-index: 0;
 
+}
+.cardList{
+	padding-top: 60px;
+	display: inline-block;
+	content: '';
+}
 .card{
 	background: #FFF;
-	margin: 20px;
-	padding: 20px;
+	margin: 20px!important;
+	padding: 10px;
 	border:1px solid #eee;
 	box-shadow: 0 2px 3px #ccc;
 	box-sizing: border-box;
 	display: inline-block;
+}
+.card:hover{
+	cursor: pointer;
+
+	border-bottom: 4px solid  #009999 ;
 }
