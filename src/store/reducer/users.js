@@ -28,7 +28,7 @@ const requestRobots = (state=intialStateRobot,action={}) =>{
 		case REQUEST_USERS_FAILED:
 			return Object.assign({},state,{error: action.payload, isPending: false})
 		case REQUEST_POSTS_PENDING:
-			return Object.assign({},state,{isPending: true})
+			return Object.assign({},state,{posts:'' , isPending: true})
 		case REQUEST_POSTS_SUCCESS:
 			return Object.assign({},state,{posts: action.payload, isPending: false})
 		case REQUEST_POSTS_FAILED:

@@ -13,7 +13,7 @@ const ProfileDataForm = (props) => {
                 	value: props.icon,
                 	validation: {
                 		required: true,
-                		isImage: true
+                		isImage: false
                        
                 	},
                 	valid: false,

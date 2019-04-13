@@ -88,6 +88,8 @@ class Profile extends Component {
 
 
   render() {
+
+ 
     return (
       <div className="Profile">
       	   <ProfileNav  showSearch={this.state.showSearch} onShowSearchFormClicked={this.onShowSearchForm} onPostFormClick={this.onShowPostForm} onUpdateFormClick={this.onShowUpdateForm} IconUrl={this.state.userIconURL} onIconClick={this.onShowIcon}  onNewPost={this.onSubmitNewPost}/>
