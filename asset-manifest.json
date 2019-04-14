@@ -1,13 +1,14 @@
 {
-  "main.css": "/socialmediaProfile/static/css/main.ca64f184.chunk.css",
-  "main.js": "/socialmediaProfile/static/js/main.24af8c31.chunk.js",
-  "main.js.map": "/socialmediaProfile/static/js/main.24af8c31.chunk.js.map",
+  "main.css": "/socialmediaProfile/static/css/main.618e000a.chunk.css",
+  "main.js": "/socialmediaProfile/static/js/main.d495d470.chunk.js",
+  "main.js.map": "/socialmediaProfile/static/js/main.d495d470.chunk.js.map",
   "runtime~main.js": "/socialmediaProfile/static/js/runtime~main.c217eecc.js",
   "runtime~main.js.map": "/socialmediaProfile/static/js/runtime~main.c217eecc.js.map",
-  "static/js/2.00d6f609.chunk.js": "/socialmediaProfile/static/js/2.00d6f609.chunk.js",
-  "static/js/2.00d6f609.chunk.js.map": "/socialmediaProfile/static/js/2.00d6f609.chunk.js.map",
+  "static/js/2.1003fce0.chunk.js": "/socialmediaProfile/static/js/2.1003fce0.chunk.js",
+  "static/js/2.1003fce0.chunk.js.map": "/socialmediaProfile/static/js/2.1003fce0.chunk.js.map",
   "index.html": "/socialmediaProfile/index.html",
-  "precache-manifest.c70749cee6b4cf4dfbce146e2c32a709.js": "/socialmediaProfile/precache-manifest.c70749cee6b4cf4dfbce146e2c32a709.js",
+  "precache-manifest.b8501bdf912359243651f818ef22124a.js": "/socialmediaProfile/precache-manifest.b8501bdf912359243651f818ef22124a.js",
   "service-worker.js": "/socialmediaProfile/service-worker.js",
-  "static/css/main.ca64f184.chunk.css.map": "/socialmediaProfile/static/css/main.ca64f184.chunk.css.map"
+  "static/css/main.618e000a.chunk.css.map": "/socialmediaProfile/static/css/main.618e000a.chunk.css.map",
+  "static/media/image-upload.png": "/socialmediaProfile/static/media/image-upload.83c59c46.png"
 }
