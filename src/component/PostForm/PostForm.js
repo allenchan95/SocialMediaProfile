@@ -18,7 +18,7 @@ const [dataForm,setDataForm] = useState({
                 	touched: false
                 },
                 Content: {
-                    elementType: 'input',
+                    elementType: 'textarea',
                     elementConfig: {
                         type: 'textarea',
                         placeholder:"POST CONTENT"
