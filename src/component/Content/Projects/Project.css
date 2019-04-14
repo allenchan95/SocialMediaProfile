@@ -28,6 +28,10 @@
     animation: openProject 0.4s ease-in-out forwards;
 }
 
+.ImageList {
+	text-align: center;
+}
+
 
 @keyframes openProject{
     0% {
@@ -41,4 +45,5 @@
 
     }
 }
+
 

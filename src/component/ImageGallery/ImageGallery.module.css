@@ -1,0 +1,17 @@
+.ModalImage {
+	height:  500px;
+	text-align: center;
+}
+
+.ImageGallery {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	height: 150px;
+	overflow-y: auto;
+	overflow-x: none;
+}
+
+.ImageGallery:empty {
+   display: none;
+}

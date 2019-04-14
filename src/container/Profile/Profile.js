@@ -64,8 +64,8 @@ class Profile extends Component {
 			location:location
 		})
 	}
-	onSubmitNewPost = (title,content,date) =>{
-		this.props.onUpdatePost({title:title,body:content,date:date});
+	onSubmitNewPost = (title,content,date,imagelist) =>{
+		this.props.onUpdatePost({title:title,body:content,date:date,imageList:imagelist});
 		// const posts =this.state.posts.slice();
 		// this.props.posts.push({title:title,content:content,date:date});  
 		// this.setState({...this.state,

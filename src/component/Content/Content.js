@@ -19,6 +19,7 @@ import './Content.css';
                              title={formElement.config.title}
                              content={formElement.config.body}
                              date={formElement.config.date}
+                             imageList={formElement.config.imageList}
                             />
                          ))}
                   

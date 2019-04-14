@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 
+
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware , compose, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
@@ -25,7 +26,7 @@ const store = createStore(rootReducer,
 	);
 const app = (
 	<Provider store={store}>
-		  <App/>
+		  <App />
 	</Provider>
 );
 

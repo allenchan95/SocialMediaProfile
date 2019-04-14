@@ -1,7 +1,14 @@
 import React from 'react';
 import './Project.css';
+import ImageGallery from '../../ImageGallery/ImageGallery';
  const Project = (props) => {
- 	
+ 	   const forElementsArray = [];
+        for (let key in props.imageList) {
+            forElementsArray.push({
+                id:key,
+                config: props.imageList[key]
+            });
+        }
  	return(
  		<div className='Project'>
  			<h3>{props.title}</h3>
@@ -17,7 +24,10 @@ import './Project.css';
                     </span>
                   )
                 })} </p>
- 			<div className='date'>{props.date} </div>
+ 			    <div className='ImageList'>
+             <ImageGallery imageList={forElementsArray} />
+ 			    </div>
+ 			  <div className='date'>{props.date} </div>
  			</div>
  		</div>
  	

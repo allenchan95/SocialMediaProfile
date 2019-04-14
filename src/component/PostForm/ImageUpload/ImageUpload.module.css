@@ -1,0 +1,92 @@
+.ImageFormContainer{
+	
+ 
+}
+
+.ImageForm {
+	display: inline-block;
+}
+
+.ImageIcon{
+	display: inline-block;
+	width: 30px;
+    height: 30px;
+    margin: 5px;
+
+	box-sizing:  border-box;
+}
+.img{
+	box-sizing:  border-box;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	animation: open 0.4s ease-out forwards;
+}
+
+.Input {
+	margin:  auto;
+	display: inline-block;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: white;
+	box-sizing:  border-box;
+	animation: open 0.4s ease-out forwards;
+}
+
+.Button{
+  	border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 16px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #32ADAD;
+    border-color: transparent;
+    color: #FFF;
+    animation: open 0.4s ease-out forwards;
+
+
+
+
+}
+.Button:hover{
+	cursor: pointer;
+    background-color: #009999;
+
+  
+}
+.Button:disabled,
+.Button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+   cursor: not-allowed;
+}
+.Form {
+	display: none;
+}
+
+.tag {
+    color: red;
+    font-size: 0.8em;
+}
+
+
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+

@@ -1,0 +1,22 @@
+.ImageContainer {
+	 display: inline-block;
+	 text-align: center;
+}
+.ImageBorder{
+  display: inline-block;	
+  margin: 0;
+  padding:0;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+}
+
+.Image {
+	width: 100%;
+}
+
+.Image:hover {
+	border: 1px solid #fff;
+	cursor: pointer;
+}

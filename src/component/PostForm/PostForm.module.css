@@ -1,17 +1,31 @@
+.wrapper{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+
+ 
+
+}
 .Button{
-	border-radius: 100px;
+    margin: 0 auto;
+  	border-radius: 100px;
     box-shadow: none;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     padding: 6px 16px;
-    position: relative;
     text-align: center;
     white-space: nowrap;
     background-color: #32ADAD;
     border-color: transparent;
     color: #FFF;
+    display: flex;
+    justify-content: center;
+
+
+
 }
 .Button:hover{
 	
@@ -25,4 +39,22 @@
   background-color: #cccccc;
   color: #666666;
    cursor: not-allowed;
+}
+.ImageList{
+  height: 140px;
+  display: inline-block;
+  overflow-y: auto;
+}
+.Image {
+  margin-top: 1px;
+  display: inline-block;
+  padding: 1px;
+  width: 60px;
+  height: 60px;
+
+}
+
+.Image img {
+  width: 100%;
+  height: 100%;
 }
