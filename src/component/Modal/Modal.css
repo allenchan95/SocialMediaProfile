@@ -70,10 +70,11 @@ img{
     }
 }
 
-@media(max-width:800px ){
+@media(max-width:764px ){
     .Modal{
-        top: 30%;
+        top: 20%;
         left: 0;
         width: 100%;
+        
     }
 }

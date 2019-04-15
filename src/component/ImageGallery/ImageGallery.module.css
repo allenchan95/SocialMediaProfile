@@ -15,3 +15,13 @@
 .ImageGallery:empty {
    display: none;
 }
+
+@media(max-width: 764px) {
+	.ModalImage {
+    height: auto;
+    max-height: 50%;
+
+    width: auto;
+    max-width: 100%;
+}
+}
