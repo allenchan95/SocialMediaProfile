@@ -109,7 +109,6 @@ class Profile extends Component {
 const mapStateToPrpos = (state) => {
   return {
     posts: state.user.posts,
-    isPending: state.user.isPending,
     error: state.user.error
   }
 }

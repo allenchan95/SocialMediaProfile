@@ -6,20 +6,19 @@ import * as actions from '../../store/action/index';
 const Nav = (props) => {
 return (
 	     	<div className={classes.appcontainer}>
-	          <div className={classes.nav}>
-	          {props.loading?<Spinner />:null}
-	          <ul>
-	          {props.isAuthenticated? 
-	          		<li onClick={()=>props.onLogout()}><div>SIGNOUT</div></li>
-	          	: <li onClick={()=>props.onAuth('a@gmail.com','123123',false)}><div>SIGNIN</div></li>
-	          }
-	          	
-	           	<li><button className='button' onClick={props.onSearchClicked}>Search</button></li>
-	          </ul>
-	          </div>
-	        	  {props.children}
+		          <div className={classes.nav}>
+			          <ul>
+				          {props.loading? 
+				          		<Spinner />:
+				          		props.isAuthenticated ?
+				          		 	 <li onClick={()=>props.onLogout()}><div>SIGNOUT</div></li>
+				          			:<li onClick={()=>props.onAuth('a@gmail.com','123123',false)}><div>SIGNIN</div></li>     	
+				          }
+			           	 <li><button className='button' onClick={props.onSearchClicked}>Search</button></li>
+			          </ul>
+		          </div>
+	        	  	{props.children}
 			 </div>
-	    
 
       );
  }

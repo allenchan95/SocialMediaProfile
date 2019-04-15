@@ -5,6 +5,23 @@
 	position: fixed;
 	z-index: 0;
 
+
+}
+.searchBar {
+
+  width: 300px;
+  height: 35px;
+  background-color: #f5f8fa;
+  border: 1px solid #e6ecf0;
+  font-size: 14pt;
+  float: center;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 5px;
+
 }
 .cardList{
 	padding-top: 60px;
@@ -13,7 +30,7 @@
 }
 .card{
 	background: #FFF;
-	margin: 20px!important;
+	margin: 20px;
 	padding: 10px;
 	border:1px solid #eee;
 	box-shadow: 0 2px 3px #ccc;
@@ -24,4 +41,26 @@
 	cursor: pointer;
 
 	border-bottom: 4px solid  #009999 ;
+}
+
+.message {
+	margin: 50px!important;
+}
+
+@media(max-width: 764px){
+	.searchForm{
+		margin-top: 20px;
+	}
+	.card {
+		width: 30%;
+		overflow: hidden;
+		font-size: 0.6em;
+		margin: 10px;
+		
+	}
+
+	.searchBar {
+		width: 50%;
+		background-color: #f5f8fa;
+	}
 }

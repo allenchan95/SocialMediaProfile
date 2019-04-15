@@ -44,7 +44,7 @@ li:hover{
   	border-bottom: 4px solid  #009999 ;
 }
 .bg {
-  	background-image: url("https://i.ytimg.com/vi/WEbogusOCvM/maxresdefault.jpg");
+  	background-image: url('../../assets/images/BACKGROUND.png');
     display: block;
     content: "";
    	height: 100%;
@@ -115,7 +115,7 @@ li:hover{
 }
 
 .bg {
-  	background-image: url("https://i.ytimg.com/vi/WEbogusOCvM/maxresdefault.jpg");
+  	background-image: url('../../assets/images/BACKGROUND.png');
     display: block;
     content: "";
    	height: 100%;
