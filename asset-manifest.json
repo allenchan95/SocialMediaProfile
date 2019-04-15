@@ -1,5 +1,5 @@
 {
-  "main.css": "/socialmediaProfile/static/css/main.618e000a.chunk.css",
+  "main.css": "/socialmediaProfile/static/css/main.9be73ec8.chunk.css",
   "main.js": "/socialmediaProfile/static/js/main.d495d470.chunk.js",
   "main.js.map": "/socialmediaProfile/static/js/main.d495d470.chunk.js.map",
   "runtime~main.js": "/socialmediaProfile/static/js/runtime~main.c217eecc.js",
@@ -7,8 +7,8 @@
   "static/js/2.1003fce0.chunk.js": "/socialmediaProfile/static/js/2.1003fce0.chunk.js",
   "static/js/2.1003fce0.chunk.js.map": "/socialmediaProfile/static/js/2.1003fce0.chunk.js.map",
   "index.html": "/socialmediaProfile/index.html",
-  "precache-manifest.b8501bdf912359243651f818ef22124a.js": "/socialmediaProfile/precache-manifest.b8501bdf912359243651f818ef22124a.js",
+  "precache-manifest.f29d9f7c3a3a7a101aad0c26b8f1d292.js": "/socialmediaProfile/precache-manifest.f29d9f7c3a3a7a101aad0c26b8f1d292.js",
   "service-worker.js": "/socialmediaProfile/service-worker.js",
-  "static/css/main.618e000a.chunk.css.map": "/socialmediaProfile/static/css/main.618e000a.chunk.css.map",
+  "static/css/main.9be73ec8.chunk.css.map": "/socialmediaProfile/static/css/main.9be73ec8.chunk.css.map",
   "static/media/image-upload.png": "/socialmediaProfile/static/media/image-upload.83c59c46.png"
 }
