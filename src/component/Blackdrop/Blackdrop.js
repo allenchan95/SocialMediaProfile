@@ -9,8 +9,6 @@ const blackdrop = props => {
           <div className='blackdrop'>
            {props.children }
           </div>
- 
-         
     </div>
   );
 };

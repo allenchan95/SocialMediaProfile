@@ -83,7 +83,6 @@ const [imageList,setImageList] = useState([]);
 
 
 	const onSubmitForm = () => {
-		console.log('submit');
 		props.updateForm(dataForm['Title'].value,dataForm['Content'].value, new Date().toLocaleString(),imageList);
         props.closed();
 	}
@@ -120,7 +119,7 @@ const [imageList,setImageList] = useState([]);
                        </div>
                       <ImageUpload  upload={onUploadImage}/>
 
-                      <button className={classes.Button} onClick={onSubmitForm} disabled={!formIsValid} >Update</button>
+                      <button className={classes.Button} onClick={onSubmitForm} disabled={!formIsValid} >POST</button>
                 </div>
             ) ;
 	return(

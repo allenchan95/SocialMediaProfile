@@ -91,7 +91,7 @@ const ProfileDataForm = (props) => {
 
 	}
 	const onSubmitForm = () => {
-		console.log('submit');
+
 		props.updateForm(dataForm['icon'].value,dataForm['name'].value,dataForm['intro'].value,dataForm['location'].value);
         props.closed();
 	}

@@ -1,5 +1,5 @@
-.ImageFormContainer{
-	
+.ImageFormContainer:empty{
+	display: none;
  
 }
 
@@ -34,7 +34,10 @@
 	animation: open 0.4s ease-out forwards;
 }
 
+
+
 .Button{
+    margin: 2px;
   	border-radius: 100px;
     box-shadow: none;
     cursor: pointer;
@@ -89,4 +92,33 @@
 }
 
 
+
+.file {
+    background: #D0EEFF;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    margin:  auto;
+    display: inline-block;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing:  border-box;
+    animation: open 0.4s ease-out forwards;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file input:hover {
+    cursor: pointer;
+    color: #004974;
+    
+}
 

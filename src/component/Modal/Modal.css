@@ -36,6 +36,7 @@
 
 img{
       width: 50%;
+      object-fit: cover;
 }
 
 
@@ -72,9 +73,10 @@ img{
 
 @media(max-width:764px ){
     .Modal{
-        top: 20%;
+        top: 30%;
         left: 0;
         width: 100%;
         
     }
+
 }

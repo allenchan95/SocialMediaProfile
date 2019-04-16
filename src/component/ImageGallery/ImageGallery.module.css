@@ -1,6 +1,7 @@
 .ModalImage {
-	height:  500px;
+	height: 500px;
 	text-align: center;
+
 }
 
 .ImageGallery {
@@ -9,7 +10,7 @@
 	text-align: center;
 	height: 150px;
 	overflow-y: auto;
-	overflow-x: none;
+	
 }
 
 .ImageGallery:empty {
@@ -20,8 +21,8 @@
 	.ModalImage {
     height: auto;
     max-height: 50%;
-
     width: auto;
-    max-width: 100%;
+    max-width: 80%;
+
 }
 }

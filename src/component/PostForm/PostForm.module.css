@@ -3,9 +3,6 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
-
- 
-
 }
 .Button{
     margin: 0 auto;
@@ -44,6 +41,9 @@
   height: 140px;
   display: inline-block;
   overflow-y: auto;
+}
+.ImageList:empty {
+  display: none;
 }
 .Image {
   margin-top: 1px;

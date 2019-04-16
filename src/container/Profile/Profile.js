@@ -46,16 +46,13 @@ class Profile extends Component {
 		this.setState({...this.state,showIcon:true,showModal:!this.state.showModal, Modalstyle : "Modal ModalOpen"})
 	}
 	onShowPostForm = () => {
-		console.log("on onShowPostForm");
 		this.setState({...this.state,showIcon:false,showModal:!this.state.showModal, Modalstyle : "Modal ModalOpen",showPostForm:true})
 	}
 	onShowSearchForm = () => {
-		console.log("on show search form");
 		this.setState({...this.state,showIcon:false,showModal:false,showPostForm:false,showSearch:true, Modalstyle : "Modal ModalClosed"})
 	}
 
 	onSubmitForm = (url,name,intro,location) => {
-		console.log(url);
 		this.setState({
 			...this.state,
 			userIconURL: url,
