@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/socialmediaProfile/static/js/runtime~main.c217eecc.js"
   },
   {
-    "revision": "ec65bd78e00dd20c2c91",
-    "url": "/socialmediaProfile/static/js/main.e232f7f0.chunk.js"
+    "revision": "8e8cd6233fee7729611f",
+    "url": "/socialmediaProfile/static/js/main.f8996dbb.chunk.js"
   },
   {
     "revision": "c8a97c4e5f7a8130b161",
     "url": "/socialmediaProfile/static/js/2.142de5ae.chunk.js"
   },
   {
-    "revision": "ec65bd78e00dd20c2c91",
-    "url": "/socialmediaProfile/static/css/main.1f1a1ffb.chunk.css"
+    "revision": "8e8cd6233fee7729611f",
+    "url": "/socialmediaProfile/static/css/main.14cd1ef3.chunk.css"
   },
   {
-    "revision": "6a98bb004952ac55114168e8fd6dfb74",
+    "revision": "83bba9f7c2717b7959a0ebea59a31cbf",
     "url": "/socialmediaProfile/index.html"
   }
 ];
